@@ -1,0 +1,32 @@
+/* UserInfo.css */
+.user-info-container {
+  display: flex;
+  align-items: center;
+  /* Hoặc màu nền phù hợp với giao diện của bạn */
+  padding: 8px;
+  border-radius: 20px; /* Điều chỉnh theo kích thước bạn muốn */
+}
+
+.user-avatar {
+  width: 40px; /* Kích thước của avatar */
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  color: #fff; /* Màu chữ, điều chỉnh cho phù hợp */
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-role {
+  font-size: small;
+  color:#FF7506;
+  font-size: 13px;
+}

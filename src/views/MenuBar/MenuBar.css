@@ -1,0 +1,262 @@
+.lg {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    top: 0;
+    margin-bottom: 70px;
+    align-items: center;
+}
+
+.MenuBar {
+    background-color: #020220;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    transition: all 0.3 linear;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subMenu {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 10px;
+    cursor: pointer;
+    flex-direction: column;
+    background-color: #020220;
+    color: white;
+}
+
+.subMenu:hover {
+    color: #FF7506;
+}
+
+.icon {
+    font-size: 25px;
+    align-items: center;
+}
+
+.spanMenu {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.btnMN {
+    background-color: #020220;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+
+}
+
+.dropdownMN {
+    /* position: absolute; */
+    display: inline-block;
+    background-color: #020220;
+
+}
+
+.dropdown-contentMN {
+    display: none;
+    position: absolute;
+    background-color: #2F2F41;
+    min-width: 160px;
+    z-index: 1;
+    right: 100%;
+    top: 0%;
+    border-radius: 3px;
+
+}
+
+.dropdown-contentMN a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contentMN a:hover {
+    background-color: #3E3E5B;
+}
+
+.dropdownMN:hover .dropdown-contentMN {
+    display: block;
+}
+
+.btnMN:hover,
+.dropdownMN:hover .btnMN {
+    background-color: #020220;
+    color: #FF7506;
+
+}
+
+.MenuBarMN {
+    background-color: #020220;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    transition: all 0.3 linear;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dropdown-content-1 {
+    display: none;
+    position: absolute;
+    background-color: #2F2F41;
+    min-width: 160px;
+    z-index: 1;
+    left: 100%;
+    top: 55%;
+    border-radius: 3px;
+
+}
+
+.dropdown-content-2 {
+    display: none;
+    position: absolute;
+    background-color: #2F2F41;
+    min-width: 160px;
+    z-index: 1;
+    left: 100%;
+    top: 65%;
+    border-radius: 3px;
+
+}
+
+.dropdown-content-3 {
+    display: none;
+    position: absolute;
+    background-color: #2F2F41;
+    min-width: 170px;
+    z-index: 1;
+    left: 100%;
+    top: 70%;
+    border-radius: 3px;
+
+}
+
+.dropdown-content-4 {
+    display: none;
+    position: absolute;
+    background-color: #2F2F41;
+    min-width: 160px;
+    z-index: 1;
+    left: 100%;
+    bottom: 0;
+    border-radius: 3px;
+
+}
+
+.dropdown-content-1 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 11px;
+    text-align: start;
+}
+
+.dropdown-content-2 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 11px;
+    text-align: start;
+}
+
+.dropdown-content-3 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 11px;
+    text-align: start;
+}
+
+.dropdown-content-4 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 11px;
+    text-align: start;
+}
+
+.dropdown-content-1 a:hover {
+    background-color: #3E3E5B;
+}
+
+.dropdown-content-2 a:hover {
+    background-color: #3E3E5B;
+}
+
+.dropdown-content-3 a:hover {
+    background-color: #3E3E5B;
+}
+
+.dropdown-content-4 a:hover {
+    background-color: #3E3E5B;
+}
+
+.dropdownMN:hover .dropdown-content-1 {
+    display: block;
+}
+
+.dropdownMN:hover .dropdown-content-2 {
+    display: block;
+}
+
+.dropdownMN:hover .dropdown-content-3 {
+    display: block;
+}
+
+.dropdownMN:hover .dropdown-content-4 {
+    display: block;
+}
+
+.btnMN:hover,
+.dropdownMN:hover .btnMN {
+    background-color: #020220;
+    color: #FF7506;
+}
+
+.MenuBarMN {
+    background-color: #020220;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    transition: all 0.3 linear;
+    flex-direction: column;
+    align-items: center;
+}

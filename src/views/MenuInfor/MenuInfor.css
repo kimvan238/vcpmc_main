@@ -1,0 +1,44 @@
+.menu-container {
+    background-color: #2F2F41;
+    position: absolute;
+    right: 0;
+    top: 23%;
+    bottom: 0;
+    display: flex;
+    transition: all 0.3 linear;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    border: 1px solid #2F2F41;
+    border-radius: 15px;
+}
+
+.sub-menu {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    padding: 10px;
+    cursor: pointer;
+    flex-direction: column;
+    background-color: #2F2F41;
+    border-radius: 15px;
+}
+
+.icon-menu {
+    font-size: 25px;
+    align-items: center;
+    color: #FF7506;
+    border: 1px solid #7272887b;
+    border-radius: 100%;
+    background: #7272887b;
+    padding: 10px;
+}
+
+.span-menu {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 10px;
+    align-items: center;
+}

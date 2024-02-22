@@ -1,0 +1,192 @@
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.infor-container {
+    display: block;
+    position: absolute;
+    text-align: start;
+    display: block;
+    left: 180px;
+    right: 0;
+    top: 10px;
+    align-items: center;
+}
+
+.avt-container {
+    align-items: center;
+    width: 50%;
+}
+
+.avt-if {
+    width: 230px;
+    height: 230px;
+    background: #2B2B3F;
+    border-radius: 100%;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.name-if {
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-align: center;
+    left: 13%;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.form-container {
+    align-items: center;
+    width: 50%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    width: 25%;
+    font-size: 13px;
+    text-align: left;
+    display: block;
+    position: absolute;
+    text-align: start;
+    display: block;
+    left: 35%;
+    right: 0;
+    top: 25%;
+}
+
+.form-infor-container {
+    font-family: 'Montserrat';
+    font-style: normal;
+    width: 500px;
+}
+
+.input {
+    border: 1px solid #3E3E50;
+    background-color: #3E3E50;
+    display: flex;
+    padding: 10px 0 10px 15px;
+    border-radius: 5px;
+    width: 450px;
+    margin: 10px 0 10px 0;
+    color: white;
+    transition: 0.25 ease;
+    outline: none;
+}
+
+.input-2 {
+    border: 1px solid #2B2B3F;
+    background-color: #2B2B3F;
+    display: flex;
+    padding: 10px 0 10px 15px;
+    border-radius: 5px;
+    width: 206px;
+    margin: 10px 0 10px 0;
+    color: white;
+    transition: 0.25 ease;
+    outline: none;
+}
+
+.input-3 {
+    border: 1px solid #3E3E50;
+    background-color: #3E3E50;
+    display: flex;
+    padding: 10px 0 10px 15px;
+    border-radius: 5px;
+    width: 206px;
+    margin: 10px 0 10px 0;
+    color: white;
+    transition: 0.25 ease;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #347AFF;
+}
+
+.input-2:focus {
+    border-color: #347AFF;
+}
+
+.input-3:focus {
+    border-color: #347AFF;
+}
+
+.input-infor {
+    position: relative;
+    margin-right: 10px;
+}
+
+.input-infor-2 {
+    position: relative;
+    margin-left: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.label {
+    margin-top: 30px;
+}
+
+input[type=date] {
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: white;
+    font-size: 13px;
+    background: #2B2B3F;
+    border: 1px solid #2B2B3F;
+}
+
+.btn-infor {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.btn-1 {
+    background: #1E1E2E;
+    color: #FF7506;
+    border: 1px solid #FF7506;
+    border-radius: 5px;
+    margin: 0 15px 0 0;
+    width: 140px;
+    height: 40px;
+}
+
+.btn-2 {
+    background: #FF7506;
+    color: white;
+    border: 1px solid #FF7506;
+    border-radius: 5px;
+    margin: 0 0 0 15px;
+    width: 140px;
+    height: 40px;
+}
+
+.custom-toast-success {
+  background-color: #727288 !important; /* Màu nền */
+  color: white !important; /* Màu chữ */
+  border-radius: 4px; /* Bo tròn */
+  padding: 16px 24px !important; /* Khoảng cách padding */
+  font-size: 16px !important; /* Cỡ chữ */
+  box-shadow: none !important; /* Bỏ bóng nếu không muốn */
+  width: auto !important; /* Chiều rộng tự động */
+  margin: 0 !important; /* Bỏ margin mặc định */
+}
+
+/* Tuỳ chỉnh icon trong toast */
+.Toastify__toast-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px; /* Khoảng cách từ icon đến text */
+}
+
+/* Tuỳ chỉnh progress bar nếu bạn sử dụng */
+.Toastify__progress-bar {
+  background: rgb(22, 157, 58);
+}
