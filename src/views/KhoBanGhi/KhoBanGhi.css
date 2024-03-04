@@ -1,268 +1,394 @@
 .dropdown {
-    position: relative;
-    display: inline-block;
-    margin: 10px 0 10px 1000px;
-    margin-left: 80%;
+  position: relative;
+  display: inline-block;
+  margin: 10px 0 10px 1000px;
+  margin-left: 80%;
 }
 
 .dropbtn {
-    border: 1px solid #C8C8DB;
-    text-align: left;
-    background-color: #1E1E2E;
-    color: white;
-    padding: 10px;
-    font-size: 10px;
-    width: 100px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 10px;
-    border-radius: 5px;
+  border: 1px solid #c8c8db;
+  text-align: left;
+  background-color: #1e1e2e;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  width: 100px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 10px;
+  border-radius: 5px;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #1E1E2E;
-    border: solid white 1px;
-    text-align: left;
-    border: 1px solid #C8C8DB;
-    font-size: 10px;
-    background-color: #1E1E2E;
-    color: white;
-    padding: 10px;
-    font-size: 10px;
-    width: 100px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 10px;
+  display: none;
+  position: absolute;
+  background-color: #1e1e2e;
+  border: solid white 1px;
+  text-align: left;
+  border: 1px solid #c8c8db;
+  font-size: 10px;
+  background-color: #1e1e2e;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  width: 100px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 10px;
 }
 
 .dropdown-content a {
-    color: white;
-    padding: 12px 16px 12px 0;
-    text-decoration: none;
-    display: block;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    left: 1697px;
-    top: 24px;
-    border: 1px solid #1E1E2E;
-    border-radius: 4px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 10px;
+  color: white;
+  padding: 12px 16px 12px 0;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  left: 1697px;
+  top: 24px;
+  border: 1px solid #1e1e2e;
+  border-radius: 4px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 10px;
 }
 
 .dropdown-content a:hover {
-    background-color: #1E1E2E;
+  background-color: #1e1e2e;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #1E1E2E;
+  background-color: #1e1e2e;
 }
 
 .vn {
-    display: flex;
-    position: absolute;
-    display: flex;
-    border-radius: 100%;
-    right: 35px;
-    top: 22px;
-    bottom: 10px;
-    width: 15px;
-    height: 15px;
+  display: flex;
+  position: absolute;
+  display: flex;
+  border-radius: 100%;
+  right: 35px;
+  top: 22px;
+  bottom: 10px;
+  width: 15px;
+  height: 15px;
 }
 
 .eng {
-    display: flex;
-    position: absolute;
-    display: flex;
-    border-radius: 100%;
-    right: 50px;
-    top: 60px;
-    bottom: 10px;
-    width: 15px;
-    height: 15px;
+  display: flex;
+  position: absolute;
+  display: flex;
+  border-radius: 100%;
+  right: 50px;
+  top: 60px;
+  bottom: 10px;
+  width: 15px;
+  height: 15px;
 }
 
 .logo2 {
-    position: absolute;
-    display: flex;
-    border-radius: 100%;
-    right: 40px;
-    top: 10px;
-    bottom: 10px;
-    width: 15px;
-    height: 15px;
+  position: absolute;
+  display: flex;
+  border-radius: 100%;
+  right: 40px;
+  top: 10px;
+  bottom: 10px;
+  width: 15px;
+  height: 15px;
 }
 
 .a-top {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 10px;
 }
 
-.search-ctn {
-    margin-top: -6px;
+.search {
+  margin-top: 60px;
+  margin-left: 8px;
 }
 
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
+form.example input[type="text"] {
+  font-size: 17px;
     float: left;
     width: 450px;
-    background: #2B2B3F;
-    border: 1px solid #2B2B3F;
+    background: #2b2b3f;
+    border: 1px solid #2b2b3f;
     border-radius: 5px;
     color: white;
+    height: 40px;
+    padding: 0 15px;
+    margin-top: -37px;
+    margin-left: -10px;
 }
 
 form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
 }
 
 form.example button:hover {
-    background: #0b7dda;
+  background: #0b7dda;
 }
 
 form.example::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .kbg-container {
-    display: block;
-    position: absolute;
-    text-align: start;
-    display: block;
-    left: 180px;
-    right: 0;
-    top: 10px;
+  display: block;
+  text-align: start;
+  position: relative; /* Giữ nguyên vị trí relative */
+  width: 100%; /* Giữ nguyên chiều rộng phù hợp với giao diện */
+  max-width: 1366px; /* Giữ nguyên chiều rộng tối đa bạn muốn */
+  margin-left: 80px; /* Thêm margin-left để đẩy container sang phải 20px */
+  margin-right: auto; /* Đặt margin-right là auto để giữ khoảng cách phù hợp bên phải */
 }
 
+
 .kbg-content {
-    display: flex;
-    transition: all 0.3 linear;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 15px;
+  display: flex;
+  transition: all 0.3 linear;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
 }
 
 h3 {
-    font-family: 'Montserrat';
-    font-style: normal;
+  font-family: "Montserrat";
+  font-style: normal;
+  margin-bottom: 50px;
 }
 
 .icon-search {
-    position: absolute;
-    left: 430px;
-    top: 154px;
+  position: absolute;
+  left: 430px;
+  top: 154px;
+  font-size: 20px;
+  margin-bottom: 3px;
 }
 
 .kbg-a {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 13px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 13px;
 }
 
 .kbg-option {
-    margin: 0 50px 0 0;
+  margin: 0 50px 0 0;
 }
 
 .kbg-slt {
-    margin: 0 0 0 10px;
-    background: #1E1E2E;
-    color: white;
-    padding: 6px;
-    border: 1px solid #FF7506;
-    border-radius: 5px;
+  margin: 0 0 0 10px;
+  background: #1e1e2e;
+  color: white;
+  padding: 6px;
+  border: 1px solid #ff7506;
+  border-radius: 5px;
 }
 
 option {
-    color: white;
-    background: #3E3E5B;
+  color: white;
+  background: #3e3e5b;
 }
 
 .kbg-icons {
-    display: flex;
-    position: absolute;
-    margin-top: 10px;
-    right: 10%;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  right: 10%;
+  gap: 15px;
 }
 
 #icon1 {
-    color: #FF7506;
-    padding: 0 6px 0 0;
+  color: #ff7506;
+  padding: 0 6px 0 0;
+   font-size: 20px;
 }
 
 #icon2 {
-    padding: 0 0 0 6px;
+  padding: 0 0 0 6px;
+   font-size: 20px;
 }
 
-.kbg-nd {
-    background: #2F2F41;
-    height: 580px;
-    width: 1360px;
-    border-radius: 10px;
-    margin-top: 20px;
+.bg-nd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-right: 50px;
+  gap:8px;
 }
 
-.menu-container {
-    background-color: #2F2F41;
-    position: absolute;
-    right: 0;
-    top: 28%;
-    bottom: 0;
-    display: flex;
-    transition: all 0.3 linear;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    border: 1px solid #2F2F41;
-    border-radius: 15px;
+.nav-container {
+  background-color: #2f2f41;
+  position: absolute;
+  right: 0;
+  top: 28%;
+  bottom: 0;
+  display: flex;
+  transition: all 0.3 linear;
+  height: fit-content;
+  border: 1px solid #2f2f41;
+  border-radius: 15px;
+  flex-direction: row; /* Nếu bạn muốn menu nằm ngang */
+  align-items: flex-start; /* Căn items về phía đầu trang */
+  padding: 20px;
+  margin-top: 60px;
 }
 
 .sub-menu {
-    display: flex;
-    align-items: center;
-    width: 80px;
-    padding: 10px;
-    cursor: pointer;
-    flex-direction: column;
-    background-color: #2F2F41;
-    border-radius: 15px;
+  display: flex;
+  align-items: center;
+  width: 80px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #2f2f41;
+  border-radius: 15px;
+  flex-direction: row; /* Nếu bạn muốn items trong menu nằm ngang */
+  margin-right: 10px;
 }
 
 .icon-menu {
-    font-size: 25px;
-    align-items: center;
-    color: #FF7506;
-    border: 1px solid #7272887b;
-    border-radius: 100%;
-    background: #7272887b;
-    padding: 10px;
+  font-size: 25px;
+  align-items: center;
+  color: #ff7506;
+  border: 1px solid #7272887b;
+  border-radius: 100%;
+  background: #7272887b;
+  padding: 10px;
 }
 
 .span-menu {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 11px;
-    font-weight: 400;
-    padding: 10px;
-    align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 10px;
+  align-items: center;
+}
+.kbg-top-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: flex-start; /* Để các phần tử bắt đầu từ bên trái */
+  margin-bottom: unset; /* Bỏ margin-bottom cố định */
+  margin-left: unset;
+}
+.record-card {
+  background: #2f2f41; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for 3D effect */
+  color:white;
+  width: 315px; /* Set the width of the cards */
+  height: 373px; /* Set the height of the cards */
+  margin-bottom: 20px; /* Space between the rows of cards */
+  border-radius: 10px; /* Rounded corners for the cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  overflow: hidden; /* Ensures content fits within the borders */
+  display: flex; /* Allows you to position the image and info side by side */
+  flex-direction: column; /* Stack children elements vertically */
+  justify-content: space-between; /* Distribute space between items */
+  margin: 0 -26px;
+}
+
+
+.record-image {
+  position: relative;
+   width: 86%;
+  height: 63%; /* Adjust the height as necessary */
+  background-size: cover; /* Ensure the background image covers the entire container */
+}
+
+.record-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.record-title {
+  font-size: 15px;
+  margin: 0.5em 0; /* Adjust spacing around the title */
+}
+
+.record-artist, .record-composer, .record-contract {
+  font-size: 10px;
+  color: #333; /* Darker text for better readability */
+  margin: -0.7em 0;
+  color:white;
+  
+}
+
+.record-footer {
+  display: flex;
+  justify-content: space-between; /* Aligns tags and edit icon on opposite ends */
+  align-items: center;
+  background: #2f2f41; /* Slightly grey background for the footer */
+  color:white;
+  max-width: 90%; /* Giới hạn chiều rộng tối đa */
+  margin: 0 auto; /* Để căn giữa footer */
+  padding: 5px 10px; /* Padding inside the tag wrappers */
+  margin-right: 115px; 
+}
+
+
+.tag, .duration {
+  background: #2f2f41; /* Light grey background for tags */
+  padding: 5px 15px;
+  border-radius: 15px; /* Circular tags */
+  font-size: 0.7em;
+  color:white;
+}
+
+.icon3 {
+  /* Style for your edit icon (FiEdit) */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+} 
+
+.tag-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3E3E5B; /* Màu nền cho mỗi khung */
+  border: 1px solid #FFFFFF; /* Viền trắng */
+  border-radius: 5px; /* Bo tròn góc */
+  margin: 0 2px;
+  font-size: 12px;
+  width:57px;
+}
+
+.tag-label {
+  font-size: 0.7em;
+  color: #FFFFFF; /* Màu chữ */
+  margin-bottom: 5px; /* Khoảng cách giữa nhãn và giá trị */
+}
+
+.tag {
+  font-size: 0.8em;
+  color: #FFFFFF; /* Màu chữ */
+  text-align: center;
+}
+.edit-icon {
+  cursor: pointer; /* Cho phép người dùng biết họ có thể click vào icon */
+  /* Thêm bất kỳ định kiểu nào khác bạn cần cho icon, ví dụ: */
+  margin-left: 54px; /* Đẩy icon ra phía cạnh phải nếu .record-footer sử dụng flex */
+  color: #ff7506; /* Màu sắc của icon */
+  /* Size của icon */
+  width: 20px; /* hoặc 'font-size: 20px;' nếu bạn muốn điều chỉnh kích thước */
+  height: 20px;
 }

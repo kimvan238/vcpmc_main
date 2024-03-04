@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MenuBar.css";
 import {
   FaWarehouse,
@@ -9,9 +9,29 @@ import {
 import { FiSettings } from "react-icons/fi";
 import { BsQuestionCircle } from "react-icons/bs";
 import { RiPlayList2Fill } from "react-icons/ri";
+import { BsCaretRightFill } from "react-icons/bs";
 import lg from "../../assets/images/vcpmc_logo.jpg";
 import { Link } from "react-router-dom";
 function MenuBar() {
+ const [menuOpen, setMenuOpen] = useState(false);
+
+ const toggleMenu = () => {
+   setMenuOpen(!menuOpen);
+ };
+
+ const handleMouseEnter = () => {
+   setMenuOpen(true);
+ };
+
+ const handleMouseLeave = () => {
+   setMenuOpen(false);
+ };
+
+ const handleSubMenuLeave = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    if (!event.relatedTarget) {
+      setMenuOpen(false);
+    }
+  };
   return (
     <>
       <div className="MenuBar">
@@ -32,21 +52,32 @@ function MenuBar() {
           <span className="spanMenu">Playlist</span>
         </Link>
 
-        <div className="subMenu">
-          <FaRegCalendarAlt className="icon"></FaRegCalendarAlt>
+        <Link to="/ds-lich-phat" className="subMenu">
+          <FaRegCalendarAlt className="icon" />
           <span className="spanMenu">Lập lịch phát</span>
-        </div>
-        <div className="dropdownMN">
-          <div className="subMenu">
-            <FaFileContract className="icon"></FaFileContract>
+        </Link>
+
+        <div
+          className="dropdownMN"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div className="subMenu" onClick={toggleMenu}>
+            <FaFileContract className="icon" />
             <span className="spanMenu">Quản lý</span>
+            
           </div>
-          <div className="dropdown-content-1">
-            <a href="#">Quản lý hợp đồng</a>
-            <a href="#">Quản lý thiết bị</a>
-            <a href="#">Quản lý ủy quyền</a>
-            <a href="#">Đơn vị sử dụng</a>
-          </div>
+          {menuOpen && (
+            <div
+              className="dropdown-content-1"
+              onMouseLeave={handleSubMenuLeave}
+            >
+              <Link to="/ds-hop-dong">Quản lý hợp đồng</Link>
+              <Link to="/ds-thiet-bi">Quản lý thiết bị</Link>
+              <Link to="/ds-uy-quyen">Quản lý ủy quyền</Link>
+              <Link to="/">Đơn vị sử dụng</Link>
+            </div>
+          )}
         </div>
 
         <div className="dropdownMN">
