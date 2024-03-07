@@ -228,21 +228,13 @@
     background-color: #3E3E5B;
 }
 
-.dropdownMN:hover .dropdown-content-1 {
-    display: block;
-}
-
-.dropdownMN:hover .dropdown-content-2 {
-    display: block;
-}
-
-.dropdownMN:hover .dropdown-content-3 {
-    display: block;
-}
-
+.dropdownMN:hover .dropdown-content-1,
+.dropdownMN:hover .dropdown-content-2,
+.dropdownMN:hover .dropdown-content-3,
 .dropdownMN:hover .dropdown-content-4 {
-    display: block;
+  display: block;
 }
+
 
 .btnMN:hover,
 .dropdownMN:hover .btnMN {

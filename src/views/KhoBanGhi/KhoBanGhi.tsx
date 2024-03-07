@@ -129,7 +129,7 @@ const KhoBanGhi = () => {
     <>
       <div className="kbg-container">
         <Language />
-
+        
         <div>
           <h3>Kho bản ghi</h3>
         </div>

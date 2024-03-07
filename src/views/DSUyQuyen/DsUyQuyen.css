@@ -3,14 +3,17 @@
 }
 
 form.example input[type=text] {
-    padding: 10px;
     font-size: 17px;
     float: left;
-    width: 500px;
-    background: #2B2B3F;
-    border: 1px solid #2B2B3F;
-    border-radius: 5px;
+    width: 450px;
+    background: #2b2b3f;
+    border: 1px solid #2b2b3f;
+    border-radius: 5px; 
     color: white;
+    height: 40px;
+    padding: 0 15px;
+    margin-top: -37px;
+    margin-left: -10px;
 }
 
 form.example button {
@@ -36,13 +39,13 @@ form.example::after {
 }
 
 .kbg-container {
-    display: block;
-    position: absolute;
-    text-align: start;
-    display: block;
-    left: 180px;
-    right: 0;
-    top: 10px;
+   display: block;
+  text-align: start;
+  position: relative; /* Giữ nguyên vị trí relative */
+  width: 100%; /* Giữ nguyên chiều rộng phù hợp với giao diện */
+  max-width: 1366px; /* Giữ nguyên chiều rộng tối đa bạn muốn */
+  margin-left: 80px; /* Thêm margin-left để đẩy container sang phải 20px */
+  margin-right: auto; /* Đặt margin-right là auto để giữ khoảng cách phù hợp bên phải */
 }
 
 .kbg-content {
@@ -56,12 +59,15 @@ form.example::after {
 h3 {
     font-family: 'Montserrat';
     font-style: normal;
+    margin-bottom: 50px;
 }
 
 .icon-search {
-    position: absolute;
-    left: 480px;
-    top: 148px;
+   position: absolute;
+  left: 430px;
+  top: 154px;
+  font-size: 20px;
+  margin-bottom: 3px;
 }
 
 .kbg-a {
@@ -90,24 +96,29 @@ option {
 
 .kbg-icons {
     display: flex;
-    position: absolute;
-    margin-top: 10px;
-    right: 10%;
+  position: absolute;
+  margin-top: 10px;
+  right: 10%;
+  gap: 15px;
 }
 
 #icon1 {
-    color: #FF7506;
-    padding: 0 6px 0 0;
+  color: #ff7506;
+  padding: 0 6px 0 0;
+   font-size: 20px;
 }
 
 #icon2 {
-    padding: 0 0 0 6px;
+  padding: 0 0 0 6px;
+   font-size: 20px;
 }
 
 .kbg-nd {
-    background: #2F2F41;
-    height: 650px;
-    width: 1420px;
-    border-radius: 10px;
-    margin-top: 20px;
+   background: #2F2F41;
+  height: 580px;
+  width: 1360px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: 178px;
+  margin-left: -18px;  /* Thêm dòng này vào CSS của bạn và điều chỉnh giá trị theo nhu cầu */
 }
