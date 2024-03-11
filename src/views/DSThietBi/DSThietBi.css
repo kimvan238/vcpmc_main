@@ -11,12 +11,12 @@ form.example input[type=text] {
     width: 450px;
     background: #2b2b3f;
     border: 1px solid #2b2b3f;
-    border-radius: 5px;
+    border-radius: 5px; 
     color: white;
     height: 40px;
     padding: 0 15px;
     margin-top: -37px;
-    margin-left: -10px;
+    margin-left: -10px; 
 }
 
 form.example button {
@@ -63,6 +63,7 @@ form.example::after {
 h3 {
     font-family: 'Montserrat';
     font-style: normal;
+    margin-bottom: 50px;
 }
 
 .icon-search {

@@ -6,6 +6,7 @@ import { FiEdit, FiLock } from "react-icons/fi";
 
 import lg from '../../assets/images/vcpmc_logo.jpg';
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function MenuInfor() {
     const navigate = useNavigate(); // Khởi tạo useNavigate
@@ -28,8 +29,10 @@ function MenuInfor() {
           </div>
 
           <div className="sub-menu">
-            <RxExit className="icon-menu"></RxExit>
-            <span className="span-menu">Đăng xuất</span>
+            <Link to="/" className="icon-menu">
+              <RxExit></RxExit>
+              <span className="span-menu">Đăng xuất</span>
+            </Link>
           </div>
         </div>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import './DSLichPhat.css';
+import "./DSLichPhat.css";
 import logo2 from '../../assets/images/vn.jpg';
 import eng from '../../assets/images/eng.jpg';
 import { FiSearch } from "react-icons/fi";
@@ -10,30 +10,28 @@ import MenuBar from "../MenuBar/MenuBar";
 import { FiEdit } from "react-icons/fi";
 import { RiPlayListAddFill } from "react-icons/ri";
 
-const DSLichPhat = () => {
-    return (
-        <>
-            <div className="kbg-container">
-                <Language />
+const QLyHDong = () => {
+  return (
+    <>
+      <div className="kbg-container">
+        <Language />
 
-                <div>
-                    <h3>Danh sách lịch phát</h3>
-                </div>
+        <div>
+          <h3>Danh sách lịch phát</h3>
+        </div>
 
-                <div className="kbg-nd">
+        <div className="kbg-nd"></div>
+      </div>
+      <div className="menu-container">
+        <div className="sub-menu">
+          <RiPlayListAddFill className="icon-menu"></RiPlayListAddFill>
+          <span className="span-menu">Thêm lịch phát</span>
+        </div>
+      </div>
 
-                </div>
-            </div>
-            <div className="menu-container">
-                <div className="sub-menu">
-                    <RiPlayListAddFill className="icon-menu"></RiPlayListAddFill>
-                    <span className="span-menu">Thêm lịch phát</span>
-                </div>
-            </div>
+      <MenuBar />
+    </>
+  );
+};
 
-            <MenuBar />
-        </>
-    )
-}
-
-export default DSLichPhat;
+export default QLyHDong;
