@@ -8,7 +8,6 @@ import { AiOutlineAppstore } from "react-icons/ai";
 import Language from "../Language/Language";
 import MenuBar from "../MenuBar/MenuBar";
 import { RiPlayListAddFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
 
 type PlaylistItem = {
   id: number;
@@ -65,6 +64,7 @@ const Playlist = () => {
               <AiOutlineAppstore></AiOutlineAppstore>
             </div>
           </div>
+<<<<<<< HEAD
         </div>
 
         <div className="kbg-nd">
@@ -107,9 +107,53 @@ const Playlist = () => {
             <RiPlayListAddFill></RiPlayListAddFill>
             <span className="span-menu">Thêm playlist</span>
           </Link>
+=======
+>>>>>>> 35f55edde1dde69ef075d3accd006ee9f7ccd073
         </div>
       </div>
 
+<<<<<<< HEAD
+=======
+       <div className="kbg-nd">
+          {/* Bảng playlist ở đây */}
+          <table className="playlist-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tiêu đề</th>
+                <th>Số bản ghi</th>
+                <th>Thời lượng</th>
+                <th>Chủ đề</th>
+                <th>Ngày tạo</th>
+                <th>Người tạo</th>
+                <th>Chi tiết</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((item, index) => (
+                <tr key={item.id}>
+                  <td>{index + 1}</td>
+                  <td>{item.title}</td>
+                  <td>{item.recordCount}</td>
+                  <td>{item.duration}</td>
+                  <td>{item.categories.join(' | ')}</td>
+                  <td>{item.creationDate}</td>
+                  <td>{item.creator}</td>
+                  <td><a href="#">Chi tiết</a></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div className="menu-container">
+        <div className="sub-menu">
+          <RiPlayListAddFill className="icon-menu"></RiPlayListAddFill>
+          <span className="span-menu">Thêm playlist</span>
+        </div>
+      </div>
+
+>>>>>>> 35f55edde1dde69ef075d3accd006ee9f7ccd073
       <MenuBar />
     </>
   );
