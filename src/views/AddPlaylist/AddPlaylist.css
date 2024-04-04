@@ -1,211 +1,206 @@
-.search-ctn {
-    margin-top: -6px;
+ .dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0 10px 1000px;
+  margin-left: 80%;
 }
 
-form.example input[type=text] {
-  font-size: 17px;
-    float: left;
-    width: 450px;
-    background: #2b2b3f;
-    border: 1px solid #2b2b3f;
-    border-radius: 5px;
-    color: white;
-    height: 40px;
-    padding: 0 15px;
-    margin-top: -37px;
-    margin-left: -10px;
+.dropbtn {
+  border: 1px solid #c8c8db;
+  text-align: left;
+  background-color: #1e1e2e;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  width: 100px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 10px;
+  border-radius: 5px;
+}
+.add-playlist-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Chiều cao toàn màn hình */
+   margin-bottom: 310px; 
 }
 
-form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
+.header {
+  display: flex;
+  align-items: center; /* Căn giữa các items theo chiều dọc */
+  padding: 10px 20px; /* Thêm padding vào phía trong của header */
+
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1e1e2e;
+  color: white;
 }
 
-form.example button:hover {
-    background: #0b7dda;
+.header-content {
+  flex-grow: 1; /* Cho phép header-content mở rộng và chiếm toàn bộ không gian còn lại */
+  display: flex;
+  align-items: start; /* Căn các items ở đầu (top) của container */
+  justify-content: start; /* Căn các items ở bên trái (left) của container */
+  align-items: flex-start;
+  padding-top: 10px;
 }
 
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
+.header-title {
+  text-align: left; /* Căn chữ sang trái */
+  margin-top: 0; /* Loại bỏ margin-top nếu có */
+  margin-left: -54px;
+  margin-bottom: 20px; /* Thêm margin-bottom nếu cần để tạo khoảng cách với các phần dưới */
+  font-size: 24px; /* Điều chỉnh kích thước font nếu cần */
+  color: white; /* Đảm bảo tiêu đề có màu dễ đọc trên nền tối */
 }
 
-.kbg-container {
-  display: block;
-  text-align: start;
-  position: relative; /* Giữ nguyên vị trí relative */
-  width: 100%; /* Giữ nguyên chiều rộng phù hợp với giao diện */
-  max-width: 1366px; /* Giữ nguyên chiều rộng tối đa bạn muốn */
-  margin-left: 80px; /* Thêm margin-left để đẩy container sang phải 20px */
-  margin-right: auto; /* Đặt margin-right là auto để giữ khoảng cách phù hợp bên phải */
+.main-content {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  flex-grow: 1;
+  flex-direction: row; /* Chỉ định rõ hướng của các item con */
 }
 
-
-.kbg-content {
-    display: flex;
-    transition: all 0.3 linear;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 15px;
+.data-entry {
+  flex: 1; /* Phần này sẽ chiếm một nửa màn hình */
+  padding: 20px;
+  border-right: 4px solid #333; 
+ margin-right: 24px;
 }
 
-h3 {
-    font-family: 'Montserrat';
-    font-style: normal;
+.add-playlist-form {
 }
 
-.h3 {
-    position: absolute;
-    left: -7%;
-    font-family: 'Montserrat';
-    font-style: normal;
-}
-
-.icon-search {
-     position: absolute;
-  left: 430px;
-  top: 154px;
-  font-size: 20px;
-  margin-bottom: 3px;
-}
-
-.kbg-a {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 13px;
-}
-
-.kbg-option {
-    margin: 0 50px 0 0;
-}
-
-.kbg-slt {
-    margin: 0 0 0 10px;
-    background: #1E1E2E;
-    color: white;
-    padding: 6px;
-    border: 1px solid #FF7506;
-    border-radius: 5px;
-}
-
-option {
-    color: white;
-    background: #3E3E5B;
-}
-
-.kbg-icons {
-    display: flex;
-    position: absolute;
-    margin-top: 10px;
-    right: 10%;
-}
-
-#icon1 {
-    color: #FF7506;
-    padding: 0 6px 0 0;
-}
-
-#icon2 {
-    padding: 0 0 0 6px;
-}
-
-.kbg-nd {
-  background: #2F2F41;
-  height: 580px;
-  width: 1360px;
+.playlist-details {
+  
+  padding: 20px;  
+  width: 890px; /* Specific width */
+  
+  color: #fff;
+  margin-left: 20px;
   border-radius: 10px;
-  margin-top: 20px;
-  margin-right: 178px;
-  margin-left: -18px;  /* Thêm dòng này vào CSS của bạn và điều chỉnh giá trị theo nhu cầu */
+  display: flex;
+  flex-direction: column;
 }
 
-.menu-container {
-    background-color: #2F2F41;
-    position: absolute;
-    right: 0;
-    top: 20%;
-    bottom: 0;
-    display: flex;
-    transition: all 0.3 linear;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    border: 1px solid #2F2F41;
-    border-radius: 15px;
+
+.add-record-button {
+  /* Phong cách cho nút thêm bản ghi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Thêm khoảng cách phía trên nút */
+  padding: 10px 20px;
+  background-color: #FF7506; /* Màu nền cho nút */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: auto; /* Đẩy nút xuống cuối nếu có khoảng trống */
+  width: fit-content; /* Nút chỉ rộng bằng nội dung bên trong */
+  align-self: flex-end; /* Đẩy nút về phía cuối container (bên phải) */
 }
 
-.sub-menu {
-    display: flex;
-    align-items: center;
-    width: 80px;
-    padding: 10px;
-    cursor: pointer;
-    flex-direction: column;
-    background-color: #2F2F41;
-    border-radius: 15px;
+.add-record-icon {
+  margin-right: 8px;
 }
 
-.icon-menu {
-    font-size: 25px;
-    align-items: center;
-    color: #FF7506;
-    border: 1px solid #7272887b;
-    border-radius: 100%;
-    background: #7272887b;
-    padding: 10px;
+.btn {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
-.span-menu {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 11px;
-    font-weight: 400;
-    padding: 10px;
-    align-items: center;
+.cancel {
+  background-color: #333;
 }
 
-.btn-box {
-    position: absolute;
-    bottom: -70px;
-    left: 40%;
+.save {
+  background-color: #FF7506; /* Màu cam cho nút Lưu */
 }
 
-.btn-1 {
-    background: #1E1E2E;
-    color: #FF7506;
-    border: 1px solid #FF7506;
-    border-radius: 5px;
-    margin: 0 15px 0 0;
-    width: 140px;
-    height: 40px;
+.footer {
+  text-align: center;
 }
 
-.btn-2 {
-    background: #FF7506;
-    color: white;
-    border: 1px solid #FF7506;
-    border-radius: 5px;
-    margin: 0 0 0 15px;
-    width: 140px;
-    height: 40px;
+.form-group {
+  margin-bottom: 15px;
+  margin-right:164px;
 }
 
-.ctent-2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 11px;
-    margin-top: 15px;
-    margin-left: 170px;
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-.lbl-2 {
-    color: red;
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #2C2C2C;
+  color: #FFF;
 }
+
+.form-group span.count-info,
+.form-group span.duration-info {
+  display: block; /* Hoặc inline-block tùy bạn cần */
+  padding: 10px;
+  background-color: #2C2C2C;
+  color: #FFF;
+}
+
+.upload-btn {
+  background-color: #3A3A3A;
+  color: #FFF;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.cancel {
+  background-color: #555;
+}
+
+.btn.save {
+  background-color: #FF7506;
+  color: #FFF;
+}
+
+
+.table-container {
+  overflow-x: auto; /* Cho phép cuộn nếu bảng rộng */
+  color:#FF7506;
+}
+
+table {
+  width: 100%; /* Bảng chiếm toàn bộ chiều rộng của container */
+  border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+}
+
+th, td {
+  text-align: left; /* Căn chữ sang trái */
+  padding: 8px; /* Thêm đệm cho ô */
+  border-bottom: 1px solid #fff; /* Đường kẻ dưới mỗi hàng */
+}
+
+.instruction {
+  margin-top: 20px; /* Khoảng cách giữa bảng và gợi ý */
+  font-size: 20px;
+}
+
+

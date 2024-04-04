@@ -1,49 +1,112 @@
 import React from "react";
-import './AddPlaylist.css';
-import logo2 from '../../assets/images/vn.jpg';
-import eng from '../../assets/images/eng.jpg';
-import { FiSearch } from "react-icons/fi";
-import { AiOutlineUnorderedList } from "react-icons/ai";
-import { AiOutlineAppstore } from "react-icons/ai";
-import Language from "../Language/Language";
-import MenuBar from "../MenuBar/MenuBar";
-import { RiPlayListAddFill } from "react-icons/ri";
+import "./AddPlaylist.css"; // Đảm bảo rằng file CSS của bạn phản ánh các thay đổi này.
 import { IoMdAdd } from "react-icons/io";
 import { Link } from "react-router-dom";
-
+import Language from "../Language/Language";
+import MenuBar from "../MenuBar/MenuBar";
 const AddPlaylist = () => {
-    return (
-      <>
-        <div className="kbg-container">
+  return (
+    <div className="add-playlist-container">
+      <div className="header">
+        <div className="header-content">
+          <h1 className="header-title">Thêm Playlist</h1>
           <Language />
-
-          <div>
-            <h3 className="h3">Thêm Playlist</h3>
-          </div>
-
-          <div className="kbg-nd"></div>
-
-          <div className="ctent-2">
-            <label className="lbl-2">* </label>
-            <label>là những trường thông tin bắt buộc</label>
-          </div>
-
-          <div className="btn-box">
-            <div className="btn-infor">
-              <input className="btn-1" type="button" value="Hủy" />
-              <input className="btn-2" type="button" value="Tạo" />
-            </div>
-          </div>
         </div>
+      </div>
 
-        <div className="menu-container">
-          <Link to="/them-ban-ghi" className="sub-menu">
-            <IoMdAdd className="icon-menu" />
-            <span className="span-menu">Thêm bản ghi</span>
+      <div className="main-content">
+        <div className="data-entry">
+          <form className="add-playlist-form">
+            {/* Anh bia */}
+            <div className="form-group">
+              <label htmlFor="coverImage">Ảnh bìa:</label>
+              <button type="button" className="upload-btn">
+                Tải lên
+              </button>
+            </div>
+
+            {/* Tieu de */}
+            <div className="form-group">
+              <label htmlFor="playlistTitle">Tiêu đề: *</label>
+              <input
+                type="text"
+                id="playlistTitle"
+                name="playlistTitle"
+                required
+              />
+            </div>
+
+            {/* Tong so bai hat */}
+            <div className="form-group">
+              <label>Tổng số bài hát:</label>
+              <span className="count-info">0 bản ghi</span>
+            </div>
+
+            {/* Tong thoi luong */}
+            <div className="form-group">
+              <label>Tổng thời lượng:</label>
+              <span className="duration-info">--:--</span>
+            </div>
+
+            {/* Mo ta */}
+            <div className="form-group">
+              <label htmlFor="playlistDescription">Mô tả:</label>
+              <textarea id="playlistDescription" name="playlistDescription" />
+            </div>
+
+            {/* Chu de */}
+            <div className="form-group">
+              <label htmlFor="playlistTheme">Chủ đề:</label>
+              <input type="text" id="playlistTheme" name="playlistTheme" />
+            </div>
+
+            {/* Che do cong khai */}
+            <div className="form-group">
+              <label htmlFor="publicMode">Chế độ công khai:</label>
+              <input type="checkbox" id="publicMode" name="publicMode" />
+            </div>
+          </form>
+        </div>
+        <div className="playlist-details">
+          {/* Bảng chi tiết */}
+          <div className="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>Tên bản ghi</th>
+                  <th>Ca sĩ</th>
+                  <th>Tác giả</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          {/* Gợi ý người dùng chọn bản ghi để thêm */}
+          <p className="instruction">
+            Vui lòng chọn bản ghi để thêm vào Playlist *
+          </p>
+
+          {/* Nút thêm bản ghi */}
+          <Link to="/them-ban-ghi" className="add-record-button">
+            <IoMdAdd className="add-record-icon" />
+            <span>Thêm bản ghi</span>
           </Link>
         </div>
-      </>
-    );
-}
+      </div>
+
+      <div className="footer">
+        <Link
+          to="/playlist"
+          className="btn cancel"
+          style={{ textDecoration: "none" }}
+        >
+          Hủy
+        </Link>
+        <button className="btn save">Lưu</button>
+      </div>
+    </div>
+  );
+};
 
 export default AddPlaylist;

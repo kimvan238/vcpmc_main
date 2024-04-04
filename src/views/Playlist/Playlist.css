@@ -32,8 +32,8 @@ form.search-form input[type=text] {
     border: 1px solid #2B2B3F;
     border-radius: 5px;
     color: white;
-    margin-right: 762px;
-    margin-top: 377px;
+    margin-right: 589px;
+    margin-bottom: 1627px;
 }
 
 form.example button {
@@ -58,7 +58,7 @@ form.example::after {
     display: table;
 }
 
-.kbg-container {
+.kbg-containe {
     display: block;
   text-align: start;
   position: relative; /* Giữ nguyên vị trí relative */
@@ -66,6 +66,7 @@ form.example::after {
   max-width: 1366px; /* Giữ nguyên chiều rộng tối đa bạn muốn */
   margin-left: 80px; /* Thêm margin-left để đẩy container sang phải 20px */
   margin-right: auto; /* Đặt margin-right là auto để giữ khoảng cách phù hợp bên phải */
+  height:1000px;
 }
 
 .kbg-content {
@@ -76,7 +77,7 @@ form.example::after {
     margin-top: 15px;
 }
 
-.text {
+.tieu-de {
     font-family: 'Montserrat';
     font-style: normal;
     margin-bottom: 240px;
@@ -113,10 +114,10 @@ option {
     background: #3E3E5B;
 }
 
-.kbg-icons {
+.kbg-icon  {
     display: flex;
     position: absolute;
-    margin-top: 10px;
+    margin-bottom : 1663px;
     right: 10%;
 }
 
@@ -129,12 +130,13 @@ option {
     padding: 0 0 0 6px;
 }
 
-.kbg-nd {
+.nd {
     background: #2F2F41;
-    height: 580px;
-    width: 1360px;
+    height: 637 px;
+    width: 1320px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: -768px;
+    margin-left: 100px;
 }
 
 .menu-container {
@@ -173,7 +175,7 @@ option {
     padding: 10px;
 }
 
-.span-menu {
+.menu {
     font-family: 'Montserrat';
     font-style: normal;
     font-size: 11px;
@@ -241,4 +243,65 @@ option {
   color: #555; /* Disabled state */
   cursor: not-allowed;
 }
- 
+ h3.tieu-de {
+  margin-left: 120px;
+  margin-bottom:850px;
+}
+
+
+
+.tieu-de {
+  padding-left: 20px; /* Hoặc căn chỉnh theo ý bạn */
+  margin-top: 20px; /* Khoảng cách phía trên tiêu đề */
+}
+
+.playlist-table {
+  width: 100%; /* Chiều rộng tối đa */
+  border-collapse: collapse; /* Loại bỏ các đường viền giữa các ô */
+  margin-top: 20px; /* Khoảng cách phía trên bảng */
+}
+
+
+
+.playlist-table th, .playlist-table td {
+  text-align: left; /* Căn lề trái cho text */
+  padding: 15px; /* Đệm cho ô */
+  border-bottom: 1px solid #555; /* Đường viền dưới mỗi hàng */
+  font-size: 14px;
+}
+
+.playlist-table th {
+  color: #FF7506; /* Màu của header */
+}
+
+.playlist-table td {
+  color: #DDD; /* Màu của dữ liệu */
+}
+
+
+
+/* Định dạng cho phần phân trang ở dưới bảng, bạn cần điều chỉnh theo mã HTML cụ thể của bạn */
+.pagination-container {
+  padding: 20px;
+  text-align: center; /* Căn giữa các phần tử phân trang */
+}
+
+.pagination-container a {
+  color: #FFF; /* Màu chữ của phân trang */
+  padding: 8px 16px; /* Đệm */
+  text-decoration: none; /* Bỏ gạch chân *//* Màu nền của phân trang */
+  margin: 0 4px; 
+  font-size: 0.85em;/* Khoảng cách giữa các phần tử */
+}
+
+.pagination-container a:hover {
+  background-color: #444; /* Màu khi hover */
+}
+.detail-link {
+  color: #FFA500; /* Đây là mã màu hex cho màu cam */
+  /* Thêm các quy tắc phong cách khác ở đây nếu cần */
+}
+
+
+
+/* Tiếp tục thêm các kiểu dáng cho các phần khác của giao diện nếu cần */

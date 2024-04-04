@@ -108,14 +108,15 @@
     font-size: 10px;
 }
 
-.search-ctn {
-    margin-botton: 115px;
+.query-box {
+    margin-bottom: -37px;
     right: 10%;
     display: flex;
     position: absolute;
+    margin-right: 60px;
 }
 
-form.example input[type=text] {
+form.sample-content input[type=text] {
     font-size: 17px;
     float: left;
     width: 450px;
@@ -151,17 +152,18 @@ form.example::after {
     display: table;
 }
 
-.kbg-container {
+.agreement-archive {
     display: block;
   text-align: start;
   position: relative; /* Giữ nguyên vị trí relative */
   width: 100%; /* Giữ nguyên chiều rộng phù hợp với giao diện */
   max-width: 1366px; /* Giữ nguyên chiều rộng tối đa bạn muốn */
-  margin-left: 80px; /* Thêm margin-left để đẩy container sang phải 20px */
+  margin-left: 204px; /* Thêm margin-left để đẩy container sang phải 20px */
   margin-right: auto; /* Đặt margin-right là auto để giữ khoảng cách phù hợp bên phải */
+  margin-bottom:167px;
 }
 
-.kbg-content {
+.deal-details {
     display: flex;
     transition: all 0.3 linear;
     flex-direction: row;
@@ -175,25 +177,25 @@ h3 {
     margin-bottom: 50px;
 }
 
-.icon-search {
-    position: absolute;
+.search-tool {
+  position: absolute;
   left: 430px;
-  top: 154px;
+  top: -24px;
   font-size: 20px;
   margin-bottom: 3px;
 }
 
-.kbg-a {
+.kbg-d {
     font-family: 'Montserrat';
     font-style: normal;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .kbg-option {
     margin: 0 50px 0 0;
 }
 
-.kbg-slt {
+.contract-select {
     margin: 0 0 0 10px;
     background: #1E1E2E;
     color: white;
@@ -226,14 +228,17 @@ option {
    font-size: 20px;
 }
 
-.kbg-nd {
+.document-content{
    background: #2F2F41;
   height: 580px;
-  width: 1360px;
+  width: 1265px;
   border-radius: 10px;
   margin-top: 20px;
   margin-right: 178px;
   margin-left: -18px;  /* Thêm dòng này vào CSS của bạn và điều chỉnh giá trị theo nhu cầu */
+   padding: 20px;
+  overflow-x: auto; /* Cho phép cuộn nếu bảng rộng hơn container */
+
 }
 
 .menu-container {
@@ -285,4 +290,66 @@ option {
     position: absolute;
     right: 3%;
     top: 10px;
+}
+.tab-container {
+  display: flex;
+  background-color: #403e52; /* Màu nền của container */
+  border-radius: 20px; /* Bo tròn góc */
+  padding: 5px; /* Đệm xung quanh các button */
+  width: 520px;
+  height:35px;
+}
+
+.tab-button {
+  flex: 1; /* Chia đều độ rộng cho các button */
+  border: none; /* Bỏ đường viền */
+  background-color: transparent; /* Nền trong suốt */
+  color: #fff; /* Màu chữ trắng */
+  padding: 10px 20px; /* Đệm cho button */
+  cursor: pointer; /* Con trỏ chuột dạng pointer */
+  border-radius: 15px; /* Bo tròn góc cho button */
+  margin: 0 2px; /* Khoảng cách giữa các button */
+  font-size: 16px; /* Kích thước font */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.tab-button:hover {
+  background-color: #575465; /* Màu nền khi hover */
+}
+
+.tab-button.active {
+  background-color: #FF7506; /* Màu nền của button đang active */
+}
+
+
+
+.contracts-table {
+  width: 100%;
+  border-collapse: collapse; /* Loại bỏ khoảng cách giữa các cell */
+}
+
+.contracts-table thead {
+   /* Màu nền cho header bảng */
+  color: #FF7506;
+}
+
+.contracts-table th, .contracts-table td {
+  padding: 12px; /* Đệm cho cell */
+  border-bottom: 1px solid #444; /* Đường viền dưới của mỗi cell */
+  text-align: left; /* Căn chữ sang trái */
+  font-size: 15px;
+}
+
+.contracts-table tr:hover {
+  background-color: #2a2a3b; /* Màu nền khi hover vào hàng */
+}
+
+.contracts-table td {
+  color: #ddd; /* Màu chữ cho các cell */
+}
+
+/* Bạn có thể thêm các class hoặc ID cụ thể cho các nút hành động để style và xử lý sự kiện */
+.xem-chi-tiet{
+    color:#FF7506;
+    text-decoration: underline;
 }

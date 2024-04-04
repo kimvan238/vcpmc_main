@@ -48,24 +48,26 @@ form.example::after {
     top: 10px;
 }
 
-.kbg-container {
+.show-list-container {
   display: block;
   text-align: start;
   position: relative; /* Giữ nguyên vị trí relative */
   width: 100%; /* Giữ nguyên chiều rộng phù hợp với giao diện */
   max-width: 1366px; /* Giữ nguyên chiều rộng tối đa bạn muốn */
-  margin-left: 80px; /* Thêm margin-left để đẩy container sang phải 20px */
+  margin-left: 176px; /* Thêm margin-left để đẩy container sang phải 20px */
   margin-right: auto; /* Đặt margin-right là auto để giữ khoảng cách phù hợp bên phải */
+  margin-bottom: 70px;
 }
 
 
-h3 {
+.title_lp {
     font-family: 'Montserrat';
     font-style: normal;
+    margin-bottom: 360px;
 }
 
 .icon-search {
-      position: absolute;
+  position: absolute;
   left: 430px;
   top: 154px;
   font-size: 20px;
@@ -112,14 +114,15 @@ option {
     padding: 0 0 0 6px;
 }
 
-.kbg-nd {
+.program-listing {
   background: #2F2F41;
   height: 580px;
   width: 1360px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: -319px;
   margin-right: 178px;
   margin-left: -18px;  /* Thêm dòng này vào CSS của bạn và điều chỉnh giá trị theo nhu cầu */
+  
 }
 
 .menu-container {
@@ -166,3 +169,35 @@ option {
     padding: 10px;
     align-items: center;
 }
+
+.schedule-table {
+  width: 100%; /* Table takes full width */
+  border-collapse: collapse; /* Removes space between cells */
+  margin-top: 1rem; /* Space above the table */
+  font-size: 24px;
+}
+
+.program-listing th,
+.program-listing td {
+  border: 1px solid #333; /* Border color for cells */
+  padding: 2px; /* Padding inside cells */
+  text-align: left; /* Align text to the left */
+  font-size: 0.85rem; /* Adjust the font size as needed */
+  line-height: 1.2; /* Giảm line-height nếu cần */
+}
+.program-listing th {
+    color: #FF7506;
+}
+
+.program-listing td {
+  
+}
+.show{
+    color:#FF7506;
+    text-decoration: underline;
+}
+.delete{
+    color:red;
+}
+
+

@@ -149,13 +149,13 @@ form.example::after {
   display: table;
 }
 
-.kbg-container {
+.kbg-contain {
   display: block;
   text-align: start;
   position: relative; /* Giữ nguyên vị trí relative */
   width: 100%; /* Giữ nguyên chiều rộng phù hợp với giao diện */
   max-width: 1366px; /* Giữ nguyên chiều rộng tối đa bạn muốn */
-  margin-left: 80px; /* Thêm margin-left để đẩy container sang phải 20px */
+  margin-left: 170px; /* Thêm margin-left để đẩy container sang phải 20px */
   margin-right: auto; /* Đặt margin-right là auto để giữ khoảng cách phù hợp bên phải */
 }
 
@@ -182,7 +182,7 @@ h3 {
   margin-bottom: 3px;
 }
 
-.kbg-a {
+.kbg-b {
   font-family: "Montserrat";
   font-style: normal;
   font-size: 13px;
@@ -192,7 +192,7 @@ h3 {
   margin: 0 50px 0 0;
 }
 
-.kbg-slt {
+.slt {
   margin: 0 0 0 10px;
   background: #1e1e2e;
   color: white;

@@ -127,7 +127,7 @@ const KhoBanGhi = () => {
   ];
   return (
     <>
-      <div className="kbg-container">
+      <div className="kbg-contain">
         <Language />
         
         <div>
@@ -149,8 +149,8 @@ const KhoBanGhi = () => {
 
         <div className="kbg-content">
           <div className="kbg-option">
-            <a className="kbg-a">Thể loại: </a>
-            <select className="kbg-slt" name="cars" id="cars">
+            <a className="kbg-b">Thể loại: </a>
+            <select className="slt" name="cars" id="cars">
               <option value="volvo">Tất cả</option>
               <option value="saab">POP</option>
               <option value="opel">EDM</option>
@@ -159,8 +159,8 @@ const KhoBanGhi = () => {
           </div>
 
           <div className="kbg-option">
-            <a className="kbg-a">Định dạng: </a>
-            <select className="kbg-slt" name="cars" id="cars">
+            <a className="kbg-b">Định dạng: </a>
+            <select className="slt" name="cars" id="cars">
               <option value="volvo">Tất cả</option>
               <option value="saab">Âm thanh</option>
               <option value="opel">Video</option>
@@ -168,8 +168,8 @@ const KhoBanGhi = () => {
           </div>
 
           <div className="kbg-option">
-            <a className="kbg-a">Thời hạn sử dụng: </a>
-            <select className="kbg-slt" name="cars" id="cars">
+            <a className="kbg-b">Thời hạn sử dụng: </a>
+            <select className="slt" name="cars" id="cars">
               <option value="volvo">Tất cả</option>
               <option value="saab">Còn thời hạn</option>
               <option value="opel">Hết hạn</option>
@@ -177,8 +177,8 @@ const KhoBanGhi = () => {
           </div>
 
           <div className="kbg-option">
-            <a className="kbg-a">Trạng thái: </a>
-            <select className="kbg-slt" name="cars" id="cars">
+            <a className="kbg-b">Trạng thái: </a>
+            <select className="slt" name="cars" id="cars">
               <option value="volvo">Tất cả</option>
               <option value="saab">Duyệt bởi người dùng</option>
               <option value="opel">Duyệt tự động</option>

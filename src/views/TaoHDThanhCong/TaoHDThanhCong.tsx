@@ -19,7 +19,7 @@ const TaoHDThanhCong = () => {
 
         <div className="holder">
           <div className="block-1">
-            <div className="icon">
+            <div className="icon-v">
               <AiFillCheckCircle></AiFillCheckCircle>
             </div>
             <div className="label-1">

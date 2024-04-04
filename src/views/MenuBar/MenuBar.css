@@ -68,6 +68,7 @@
     /* position: absolute; */
     display: inline-block;
     background-color: #020220;
+    position: relative;
 
 }
 
