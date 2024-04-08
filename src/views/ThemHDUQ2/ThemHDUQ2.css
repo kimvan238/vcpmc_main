@@ -12,30 +12,30 @@
     display: block;
     left: 10%;
     right: 0;
-    top: 10px;
+    top: 3px;
     font-family: 'Montserrat';
     font-style: normal;
 }
 
-.h3 {
+.topic-heading {
     position: absolute;
     left: -5%;
     font-family: 'Montserrat';
     font-style: normal;
 }
 
-.lb-1 {
+.topic-label {
     margin-bottom:10px;
 }
 
 .lb-2 {
-    margin-bottom: 53px;
-    margin-top: -15px;
+    margin-bottom: 26px;
+    margin-top: 10px;
 }
 
 .lb-3 {
-    margin-bottom: 93px;
-    margin-top: -15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 .kbg-slt {
@@ -58,20 +58,20 @@
     color: white;
 }
 
-.kbg-slt-2 {
+.filter-menu-2{
     position: absolute;
     font-family: 'Montserrat';
     font-style: normal;
     background: #2B2B3F;
-    color: #727288;
+    color: #efefef;
     padding: 10px;
     border: 1px solid #727288;
     border-radius: 5px;
     width: 287px;
-    height: 40px;
+    height: 36px;
     /* font-size: 15px; */
-    margin-top: -14px;
-    left: 137%;
+    margin-top: -38px;
+    left: 118%;
 }
 
 .option-2 {
@@ -96,13 +96,13 @@
 
 .input-two {
     position: absolute;
-    left: 137%;
+    left: 118%;
     background: #2B2B3F;
     width: 280px;
     border: 1px solid #727288;
     border-radius: 5px;
-    height: 40px;
-    margin-top: -14px;
+    height: 36px;
+    margin-top: -44px;
     padding-left: 5px;
     color: white;
 }
@@ -148,26 +148,26 @@
 
 .input-4 {
     position: absolute;
-    left: 137%;
+    left: 118%;
     background: #2B2B3F;
     width: 280px;
     border: 1px solid #727288;
     border-radius: 5px;
     height: 80px;
-    margin-top: -14px;
+    margin-top: -40px;
     padding-left: 5px;
     color: white;
 }
 
 .input-7 {
     position: absolute;
-    left: 115%;
+    left: 118%;
     background: #2B2B3F;
     width: 280px;
     border: 1px solid #727288;
     border-radius: 5px;
-    height: 40px;
-    margin-top: -14px;
+    height: 30px;
+    margin-top: -39px;
     padding-left: 5px;
     color: white;
 }
@@ -198,6 +198,18 @@
     height: 120px;
 }
 
+.input-secondary{
+    position: absolute;
+    left: 118%;
+    background: #2B2B3F;
+    width: 222px;
+    border: 1px solid #727288;
+    border-radius: 5px;
+    padding-left: 5px;
+    color: white;
+    height: 33px;
+    margin-top: -39px;
+}
 .input-date-2 {
     position: absolute;
     left: 137%;
@@ -226,15 +238,15 @@
 
 .input-date-4 {
     position: absolute;
-    left: 137%;
+    left: 118%;
     background: #2B2B3F;
     width: 277px;
     border: 1px solid #727288;
     border-radius: 5px;
-    height: 40px;
+    height: 35px;
     color: #727288;
     padding-left: 10px;
-    margin-top: -14px;
+    margin-top: -38px;
 }
 
 .input-date-z {
@@ -278,17 +290,18 @@
     display: flex;
     flex-direction: column;
     left: -7%;
-    top: 100px;
+    top: 75px;
     font-size: 13px;
     font-weight: 1000;
     gap: 10px;
+    color: #FF7506;
 }
 
 .box-2 {
     position: relative;
     display: flex;
     flex-direction: row;
-    top: 100px;
+    top: 64px;
     font-size: 13px;
     font-weight: 1000;
     left: 25%;
@@ -302,6 +315,7 @@
     top: 100px;
     font-size: 13px;
     font-weight: 1000;
+    color: #FF7506;
 }
 
 .box-5 {
@@ -312,6 +326,7 @@
     font-size: 13px;
     font-weight: 1000;
     left: 340px;
+    color: #FF7506;
 }
 
 .box-6 {
@@ -321,7 +336,8 @@
     top: 100px;
     font-size: 13px;
     font-weight: 1000;
-    left: 53%;
+    left: 48%;
+    color: #FF7506;
 }
 
 
@@ -329,11 +345,11 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    top: 80px;
+    top: 51px;
     font-size: 13px;
     font-weight: 1000;
     margin-left: 210px;
-    left: 35%;
+    left: 30%;
 }
 
 .box-file-2 {
@@ -356,7 +372,7 @@
     height: 35px;
     width: 95px;
     border-radius: 5px;
-    margin-top: -10px;
+    margin-top: 0px;
     font-weight: 100;
 }
 
@@ -411,8 +427,8 @@
 
 hr {
     margin-top: 90px;
-    margin-left: -100px;
-    width: 1580px;
+    margin-left: -200px;
+    width: 1566px;
     border: 1px solid #727288;
 }
 
@@ -441,4 +457,44 @@ hr {
     height: 40px;
 }
 
+.contract-label{
+    color: #FFAC69;
+    font-size: 24px;
+    font-family: 'Montserrat';
+}
 
+/* General styles for the container of the radio buttons */
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+/* Hiding the default radio button */
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+/* Styling the custom radio button label */
+.radio-group label {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: 2px solid #FF7506; /* Border color */
+  border-radius: 15px; /* Rounded corners for the label */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 120px; /* Space between radio buttons */
+}
+
+/* Changing the label background and text color when the radio button is checked */
+.radio-group input[type="radio"]:checked + label {
+  background-color: #FF7506; /* Background color for the selected item */
+  color: white; /* Text color for the selected item */
+}
+
+/* Optional: adding a hover effect for labels */
+.radio-group label:hover {
+  background-color: #ff9642; /* Lighter shade for hover state */
+}
+.radio-label {
+  margin-right: 10px; /* Space between the label and the radio buttons */
+}

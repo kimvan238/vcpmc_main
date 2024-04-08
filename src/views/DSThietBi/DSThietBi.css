@@ -5,21 +5,21 @@
     position: absolute;
 }
 
-form.example input[type=text] {
+form.sample input[type=text] {
   font-size: 17px;
     float: left;
-    width: 450px;
+    width: 550px;
     background: #2b2b3f;
     border: 1px solid #2b2b3f;
     border-radius: 5px; 
     color: white;
     height: 40px;
     padding: 0 15px;
-    margin-top: -37px;
-    margin-left: -10px; 
+    margin-top: 2px;
+    margin-right: 10px; 
 }
 
-form.example button {
+form.sample button {
     float: left;
     width: 20%;
     padding: 10px;
@@ -31,24 +31,25 @@ form.example button {
     cursor: pointer;
 }
 
-form.example button:hover {
+form.sample button:hover {
     background: #0b7dda;
 }
 
-form.example::after {
+form.sample::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.kbg-container {
+.device-box {
   display: block;
   text-align: start;
   position: relative; /* Giữ nguyên vị trí relative */
   width: 100%; /* Giữ nguyên chiều rộng phù hợp với giao diện */
   max-width: 1366px; /* Giữ nguyên chiều rộng tối đa bạn muốn */
-  margin-left: 80px; /* Thêm margin-left để đẩy container sang phải 20px */
+  margin-left: 175px; /* Thêm margin-left để đẩy container sang phải 20px */
   margin-right: auto; /* Đặt margin-right là auto để giữ khoảng cách phù hợp bên phải */
+  margin-bottom: 216px;
 }
 
 
@@ -66,12 +67,12 @@ h3 {
     margin-bottom: 50px;
 }
 
-.icon-search {
+.explorer-icon {
       position: absolute;
-  left: 430px;
-  top: 154px;
+  left: 534px;
+  top: 14px;
   font-size: 20px;
-  margin-bottom: 3px;
+  margin-bottom : 100px;
 }
 
 .kbg-a {
@@ -109,10 +110,10 @@ option {
     background: #3E3E5B;
 }
 
-.kbg-nd {
+.page-content {
   background: #2F2F41;
   height: 580px;
-  width: 1360px;
+  width: 1232px;
   border-radius: 10px;
   margin-top: 20px;
   margin-right: 178px;
@@ -163,3 +164,61 @@ option {
     padding: 10px;
     align-items: center;
 }
+
+.page-content {
+  padding: 16px;
+  background: #1E1E2D;
+  color: #fff;
+}
+
+.devices-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.devices-table th, .devices-table td {
+  padding: 12px;
+  border-bottom: 1px solid #2C2C3A;
+  font-size: 12px
+}
+
+.devices-table th {
+  background: #2C2C3A;
+  color: #FFA500;
+}
+
+.devices-table tr:nth-child(odd) {
+  background-color: #1E1E2D;
+}
+
+.devices-table tr:nth-child(even) {
+  background-color: #262634;
+}
+
+.devices-table td {
+  text-align: left;
+}
+
+.devices-table .status-dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+
+.status-dot.active {
+  background-color: #28A745; /* Green for active devices */
+}
+
+.status-dot.inactive {
+  background-color: #DC3545; /* Red for inactive devices */
+}
+
+.status-dot.locked {
+  background-color: #FFC107; /* Yellow for locked devices */
+}
+

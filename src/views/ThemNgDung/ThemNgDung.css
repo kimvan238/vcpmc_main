@@ -1,0 +1,121 @@
+.full-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 17px;
+}
+
+.kbg-container {
+    display: block;
+    position: absolute;
+    text-align: start;
+    display: block;
+    left: 10%;
+    right: 0;
+    top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.h3 {
+    position: absolute;
+    left: -6%;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.app-label-1 {
+    margin-bottom: 50px;
+    color: #FF7506;
+    margin-bottom: 30px;
+}
+
+.select-user-option {
+    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    background: #2B2B3F;
+    color: #727288;
+    padding: 10px;
+    border: 1px solid #727288;
+    border-radius: 5px;
+    width: 230px;
+    height: 40px;
+    /* font-size: 15px; */
+    margin-top: -60px;
+    left: 137%;
+}
+
+.option-2 {
+    background: #2B2B3F;
+    color: white;
+}
+
+.user-data-input {
+    position: absolute;
+    left: 137%;
+    background: #2B2B3F;
+    width: 350px;
+    border: 1px solid #727288;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: -60px;
+    padding-left: 5px;
+    color: white;
+}
+
+.box-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.app-section-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: -35%;
+    top: 100px;
+    font-size: 13px;
+    font-weight: 1000;
+}
+
+.box-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    font-size: 13px;
+    font-weight: 1000;
+    left: 470px;
+}
+
+.btn-box {
+    position: absolute;
+    top: 420px;
+}
+
+.btn-1 {
+    background: #1E1E2E;
+    color: #FF7506;
+    border: 1px solid #FF7506;
+    border-radius: 5px;
+    margin: 0 15px 0 0;
+    width: 140px;
+    height: 40px;
+}
+
+.btn-2 {
+    background: #FF7506;
+    color: white;
+    border: 1px solid #FF7506;
+    border-radius: 5px;
+    margin: 0 0 0 15px;
+    width: 140px;
+    height: 40px;
+}
+.user-text{
+    color: #FF7506;
+    margin-bottom: 24px;
+}

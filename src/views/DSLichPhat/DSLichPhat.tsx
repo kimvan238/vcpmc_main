@@ -51,7 +51,7 @@ const DSLichPhat = () => {
             ))}
           </tbody>
         </table>
-        <div className="program-listing"></div>
+        
       </div>
       <div className="menu-container">
         <div className="sub-menu">

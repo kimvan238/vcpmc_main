@@ -115,7 +115,7 @@
     position: absolute;
 }
 
-form.example input[type=text] {
+form.user-list input[type=text] {
     color: white;
     padding: 10px;
     font-size: 17px;
@@ -126,7 +126,7 @@ form.example input[type=text] {
     border-radius: 5px;
 }
 
-form.example button {
+form.user-list button {
     float: left;
     width: 20%;
     padding: 10px;
@@ -138,17 +138,17 @@ form.example button {
     cursor: pointer;
 }
 
-form.example button:hover {
+form.user-list button:hover {
     background: #0b7dda;
 }
 
-form.example::after {
+form.user-list::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.kbg-container {
+.utility-container {
     display: block;
     position: absolute;
     text-align: start;
@@ -213,10 +213,10 @@ option {
     padding: 0 0 0 6px;
 }
 
-.kbg-nd {
+.user-directory {
     background: #2F2F41;
     height: 650px;
-    width: 1360px;
+    width: 1297px;
     border-radius: 10px;
     margin-top: 37px;
 }
@@ -270,4 +270,66 @@ option {
     position: absolute;
     right: 3%;
     top: 10px;
+}
+
+.user-tabset {
+  display: flex;
+  background-color: #403e52; /* Màu nền của container */
+  border-radius: 20px; /* Bo tròn góc */
+  padding: 5px; /* Đệm xung quanh các button */
+  width: 520px;
+  height:35px;
+}
+
+.user-tabset-button {
+  flex: 1; /* Chia đều độ rộng cho các button */
+  border: none; /* Bỏ đường viền */
+  background-color: transparent; /* Nền trong suốt */
+  color: #fff; /* Màu chữ trắng */
+  padding: 10px 20px; /* Đệm cho button */
+  cursor: pointer; /* Con trỏ chuột dạng pointer */
+  border-radius: 15px; /* Bo tròn góc cho button */
+  margin: 0 2px; /* Khoảng cách giữa các button */
+  font-size: 16px; /* Kích thước font */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.user-tabset-button:hover {
+  background-color: #575465; /* Màu nền khi hover */
+}
+
+.user-tabset-button.active {
+  background-color: #FF7506; /* Màu nền của button đang active */
+}
+.user-directory table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.user-directory th, .user-directory td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-directory th {
+    color:#FF7506;
+}
+
+.user-directory tr:hover {
+    
+}
+
+.user-directory button {
+    
+    color: #FF7506;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-directory td a {
+  color: #FF7506; /* Orange color for links */
+  text-decoration: underline;
 }

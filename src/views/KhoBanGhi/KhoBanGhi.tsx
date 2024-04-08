@@ -129,7 +129,7 @@ const KhoBanGhi = () => {
     <>
       <div className="kbg-contain">
         <Language />
-        
+
         <div>
           <h3>Kho bản ghi</h3>
         </div>
@@ -141,7 +141,7 @@ const KhoBanGhi = () => {
               placeholder="Tên bản ghi, ca sĩ,... "
               name="search2"
             ></input>
-            <span className="icon-search">
+            <span className="magnifier-icon">
               <FiSearch></FiSearch>
             </span>
           </form>

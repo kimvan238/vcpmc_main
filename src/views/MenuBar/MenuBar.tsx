@@ -52,7 +52,7 @@ function MenuBar() {
             <Link to="/ds-hop-dong">Quản lý hợp đồng</Link>
             <Link to="/ds-thiet-bi">Quản lý thiết bị</Link>
             <Link to="/ds-uy-quyen">Quản lý ủy quyền</Link>
-            <Link to="/">Đơn vị sử dụng</Link>
+            <Link to="/ds-dv-sd">Đơn vị sử dụng</Link>
           </div>
         </div>
 
@@ -63,8 +63,8 @@ function MenuBar() {
           </div>
           <div className="dropdown-content-2">
             <a href="#">Báo cáo doanh thu</a>
-            <a href="#">Lịch sử kiểm soát</a>
-            <a href="#">Phân phối doanh thu</a>
+            <Link to="/ls-doi-soat">Lịch sử kiểm soát</Link>
+            <Link to="/pp-doanh-thu">Phân phối doanh thu</Link>
           </div>
         </div>
 
@@ -74,11 +74,11 @@ function MenuBar() {
             <span className="spanMenu">Cài đặt</span>
           </div>
           <div className="dropdown-content-3">
-            <a href="#">Phân quyền người dùng</a>
+            <Link to="/ds-nguoi-dung">Phân quyền người dùng</Link>
             <a href="#">Cấu hình</a>
             <a href="#">Quản lý hợp đồng</a>
-            <a href="#">Thông tin sản phẩm</a>
-            <a href="#">Chu kỳ kiểm soát</a>
+            <Link to="/tt-tac-pham">Thông tin sản phẩmt</Link>
+            <Link to="/chu-ky-dsoat">Chu kỳ kiểm soát</Link>
           </div>
         </div>
 
@@ -89,8 +89,8 @@ function MenuBar() {
           </div>
           <div className="dropdown-content-4">
             <a href="#">Hướng dẫn sử dụng</a>
-            <a href="#">Tải app</a>
-            <a href="#">Feedback</a>
+            <Link to="/tai-app">Tải app</Link>
+            <Link to="/feedback">Feedback</Link>
           </div>
         </div>
       </div>

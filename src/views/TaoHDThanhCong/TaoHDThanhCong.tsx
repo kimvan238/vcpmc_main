@@ -28,7 +28,7 @@ const TaoHDThanhCong = () => {
           </div>
 
           <div>
-            <hr />
+            <hr className="divider" />
           </div>
 
           <div>
@@ -48,7 +48,7 @@ const TaoHDThanhCong = () => {
                     Bạn có thể thực hiện thêm bản ghi ngay trên website
                   </label>
                   <input
-                    className="btn"
+                    className="view-btn"
                     type="button"
                     value="Thêm bản ghi trực tiếp"
                   />
@@ -66,7 +66,7 @@ const TaoHDThanhCong = () => {
                     Bạn có thể thêm bản ghi bằng tool
                   </label>
                   <input
-                    className="btn-2"
+                    className="view-btn-2"
                     type="button"
                     value="Thêm bản ghi bằng tool"
                   />

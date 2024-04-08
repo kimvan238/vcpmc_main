@@ -1,0 +1,118 @@
+.kbg-container {
+    display: block;
+    position: absolute;
+    text-align: start;
+    display: block;
+    left: 180px;
+    right: 0;
+    top: 10px;
+    
+}
+
+
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.app-download-box {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    margin-top:-4px;
+    margin-left: 77px;
+}
+
+.step-1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.step-2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FF7506;
+    font-family: "Nunito", sans-serif;
+}
+
+.step-3 {
+    font-size: 30px;
+    color: #FF7506;
+    display: block; /* Đặt dấu gạch ngang thành một dòng riêng biệt */
+  text-align: center; /* Căn giữa dấu gạch ngang */
+  font-family: "Nunito", sans-serif;
+}
+
+.step-4 {
+    font-weight: bold;
+    display: block; /* Đặt các label này xuống dòng mới */
+    text-align: center; /* Căn giữa chữ */
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+}
+.step-5 {
+  display: block; /* Đặt các label này xuống dòng mới */
+  text-align: center; /* Căn giữa chữ */
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}   
+.step-6{
+    font-family: "Nunito", sans-serif;
+}
+.download {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-left: 146px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: #2F2F41;
+    padding: 55px 55px 25px 55px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.icon-1 {
+    color: #FFC727;
+    margin-bottom: 50px;
+    font-size: 120px;
+}
+
+.icon-2 {
+    color: #29bbff;
+    margin-bottom: 50px;
+    font-size: 120px;
+}
+
+.icon-3 {
+    color: greenyellow;
+    margin-bottom: 50px;
+    font-size: 120px;
+}
+
+.btn {
+    background: #FF7506;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 180px;
+    height: 45px;
+}
+.app-download-box label {
+  display: inline-block; /* Đặt các label cạnh nhau thay vì xếp chồng lên nhau */
+  margin-right: 10px; /* Tạo một khoảng cách nhỏ giữa các label */
+  vertical-align: middle; /* Căn giữa các label theo chiều dọc */
+}
+
+
+
+
+
+
+

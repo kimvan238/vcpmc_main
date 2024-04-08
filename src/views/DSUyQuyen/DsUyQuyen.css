@@ -2,10 +2,10 @@
     margin-top: -6px;
 }
 
-form.example input[type=text] {
+form.partner-info input[type=text] {
     font-size: 17px;
     float: left;
-    width: 450px;
+    width: 639px;
     background: #2b2b3f;
     border: 1px solid #2b2b3f;
     border-radius: 5px; 
@@ -13,10 +13,11 @@ form.example input[type=text] {
     height: 40px;
     padding: 0 15px;
     margin-top: -37px;
-    margin-left: -10px;
+    margin-left: 00px;
+    margin-right: 546px;
 }
 
-form.example button {
+form.partner-info button {
     float: left;
     width: 20%;
     padding: 10px;
@@ -28,24 +29,25 @@ form.example button {
     cursor: pointer;
 }
 
-form.example button:hover {
+form.partner-info button:hover {
     background: #0b7dda;
 }
 
-form.example::after {
+form.partner-info::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.kbg-container {
+.partnership-list{
    display: block;
   text-align: start;
   position: relative; /* Giữ nguyên vị trí relative */
   width: 100%; /* Giữ nguyên chiều rộng phù hợp với giao diện */
   max-width: 1366px; /* Giữ nguyên chiều rộng tối đa bạn muốn */
-  margin-left: 80px; /* Thêm margin-left để đẩy container sang phải 20px */
+  margin-left: 177px; /* Thêm margin-left để đẩy container sang phải 20px */
   margin-right: auto; /* Đặt margin-right là auto để giữ khoảng cách phù hợp bên phải */
+  margin-bottom: 230px;
 }
 
 .kbg-content {
@@ -62,12 +64,12 @@ h3 {
     margin-bottom: 50px;
 }
 
-.icon-search {
+.partner-search-icon {
    position: absolute;
-  left: 430px;
-  top: 154px;
+  left: 619px;
+  top: -24px;
   font-size: 20px;
-  margin-bottom: 3px;
+  margin-bottom: -11px;
 }
 
 .kbg-a {
@@ -113,12 +115,54 @@ option {
    font-size: 20px;
 }
 
-.kbg-nd {
+.partner-card {
    background: #2F2F41;
   height: 580px;
-  width: 1360px;
+  width: 1279px;
   border-radius: 10px;
   margin-top: 20px;
   margin-right: 178px;
   margin-left: -18px;  /* Thêm dòng này vào CSS của bạn và điều chỉnh giá trị theo nhu cầu */
 }
+.partner-card table {
+  width: 100%;
+  border-collapse: collapse;
+  
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.partner-card th,
+.partner-card td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #404040;
+}
+
+.partner-card th {
+  color:#ff7506;
+}
+
+.partner-card tr:hover {
+  background-color: #333335;
+}
+    
+.partner-card td {
+  font-size: 14px; /* Adjust the size as needed */
+}
+
+.partner-card th {
+  font-size: 16px; /* Adjust the size as needed */
+  font-weight: normal; /* For a less bold header */
+}
+
+.update-action {
+  color: #FF7506; /* Sets the text color to the specified orange */
+  text-decoration: underline; /* Adds an underline to the text */
+  cursor: pointer; /* Changes the cursor to indicate clickable items (optional) */
+}
+
+.update-action:hover {
+  text-decoration: none; /* Optional: Removes the underline on hover if desired */
+}
+
